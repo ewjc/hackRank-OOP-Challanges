@@ -84,3 +84,20 @@ for x in range(a[0], b[-1] + 1):
             total_x_numbers += 1
 
 print(total_x_numbers)
+
+--------------------------------------------------------------
+(FROM IMPLEMENTATION)
+4. Save the Prisoner! - 75%
+test_cases = int(raw_input())
+arr = map(int,raw_input().strip().split(' '))
+
+number_of_prisoners = arr[0]
+number_of_sweets = arr[1]
+prisoner_id = arr[2]
+
+
+for i in range(prisoner_id, (number_of_sweets + number_of_prisoners - (number_of_prisoners - prisoner_id))):
+    if i > number_of_prisoners:
+        print(i - number_of_prisoners)
+    else:
+        print(i)
