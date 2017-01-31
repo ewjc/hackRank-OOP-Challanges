@@ -24,3 +24,21 @@ print(negative_count / n)
 print(zero_count / n)
 
 --------------------------------------------------------------
+
+(FROM IMPLEMENTATION)
+2. ANGRY PROFESSOR - 94.62%
+
+import sys
+
+
+t = int(raw_input().strip())
+for a0 in xrange(t):
+    n,k = raw_input().strip().split(' ')
+    n,k = [int(n),int(k)]
+    a = map(int,raw_input().strip().split(' '))
+
+    students_ontime = 0
+
+    for time in a:
+        if time <= 0:
+            students_ontime += 1
