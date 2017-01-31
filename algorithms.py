@@ -42,3 +42,10 @@ for a0 in xrange(t):
     for time in a:
         if time <= 0:
             students_ontime += 1
+            
+    if students_ontime >= k:
+        print('NO')
+    else:
+        print('YES')
+
+--------------------------------------------------------------
