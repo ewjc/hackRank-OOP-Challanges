@@ -77,3 +77,10 @@ def loop_b(x):
         else:
             return False
     return True
+
+for x in range(a[0], b[-1] + 1):
+    if loop_a(x):
+        if loop_b(x):
+            total_x_numbers += 1
+
+print(total_x_numbers)
