@@ -152,4 +152,20 @@ class Bee(Animal):
         print('{name} never sleeps').format(name=name)
 
 Problem 7:--------------------------------------------------------------
+# Implement the Zookeeper class here
+class Zookeeper(object):
+    # Implement the initializer method here
+    def __init__(self, name):
+        self.name = name
+
+    # Implement the feedAnimals method here
+    def feedAnimals(self, animals, food):
+        name = self.name
+        self.animals = animals
+        self.food = food
+        print('{name} is feeding {food} to {number} animals').format(name=name, food=food, number=len(animals))
+        for animal in range(0, len(animals)):
+            animals[animal].eat(food)
+            animals[animal].sleep()
+        
 Problem 8:--------------------------------------------------------------
